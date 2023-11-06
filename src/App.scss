@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+header > .MuiToolbar-regular {
+  background: white;
+  color: red;
+  border-bottom: 2px solid rgb(128 128 128 / 52%);
+  height: 100%;
+  padding: 0;
+  & > .MuiGrid-container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+}
+svg {
+  fill: gray;
+  max-width: 2rem;
+}
+.IconWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 !important;
+  & > svg {
+    cursor: pointer;
+  }
+}
+.cartWrapper {
+  border-left: 2px solid rgb(128 128 128 / 52%);
+}
+.mainDetails {
+  margin-top: 7%;
+}
+.productDetailsWrapper .MuiCard-root {
+  border: 2px solid rgb(128 128 128 / 52%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: unset;
+  border-radius: 0 !important;
+  & > svg {
+    fill: rgb(128 128 128 / 52%);
+  }
+}
+.miniImage {
+  min-height: 14vh;
+  margin-bottom: 1rem;
+}
+.mainImage {
+  min-height: 80vh;
+  position: relative;
+  & > span {
+    width: 1.5rem;
+    position: absolute;
+    bottom: 10px;
+    right: 14px;
+    cursor: pointer;
+  }
+}
+.detailsWrapper {
+  margin-top: 5vh;
+  background: #efefef;
+  color: white;
+  padding: 2rem 2rem;
+}
+
+.productDetailsCardWrapper {
+  margin: 10px 0;
+  gap: 32px;
+  & .MuiCard-root {
+    border-radius: 0px !important;
+    padding: 1rem;
+  }
+}
+.titles {
+  color: #d02b1e;
+  text-transform: uppercase;
+}
+.description {
+  font-size: 15px;
+  color: black;
+  line-height: 1.3;
+  padding: 5px 0;
+  width: 81% !important;
+}
+
+.subtitles {
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+  color: #999999;
+  margin-top: 10px !important;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+.chipsWrapper {
+  display: flex;
+  gap: 10px;
+  & > div {
+    background: #ced4db;
+    padding: 6px 11px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: white;
+  }
+}
+.attachListWrapper > a {
+  display: flex;
+  align-items: center;
+  color: #006ead;
+  text-decoration: unset;
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  & > svg {
+    max-width: 1rem !important;
+    padding-right: 5px;
+  }
+}
+
+.priceBreaksWrapper > div {
+  display: flex;
+  justify-content: space-around;
+  max-width: 62%;
+  padding: 8px;
+  font-size: 14px;
+  border-top: 2px solid #999999;
+}
+.mainImage > svg {
+  max-width: 18rem;
+}
+.productDetailsWrapper {
+  padding: 0 16px;
+}
+.productCostDetails {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+.mainTitleFoProduct {
+  font-size: 23px !important;
+  max-width: 36rem;
+}
+.suplrName {
+  color: gray;
+  font-size: 15px;
+  & > a {
+    text-decoration: unset;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.priceTag > span {
+  font-size: 13px;
+  color: gray;
+  & > svg {
+    max-width: 1rem !important;
+    fill: black !important;
+  }
+}
+.vatTag {
+  font-size: 15px;
+  color: gray;
+}
+.goldStar > svg {
+  fill: #f59b19 !important;
+}
+.starsWrapper {
+  padding: 10px 0;
+  & svg {
+    max-width: 1.8rem !important;
+  }
+}
+.addCart {
+  width: 10rem;
+  justify-content: space-around !important;
+  background: #e24f43 !important;
+  color: white;
+  padding: 8px !important;
+  & svg {
+    fill: white !important;
+  }
+}
+.addToCartButtonWrapper {
+  color: black !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.addToCartButtonWrapper input {
+  padding: 10px;
+  width: 81px;
+  text-align: right;
+}
+.cartInNav {
+  display: flex !important;
+  justify-content: flex-end !important;
+  padding: 0 !important;
+  align-items: center !important;
+}
+.countNumber {
+  position: relative;
+  & > div {
+    position: absolute;
+    top: -3px;
+    left: 18px;
+    color: white;
+    background: red;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 10px;
+  }
+}
